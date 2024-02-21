@@ -48,7 +48,6 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl">Kico components with</h2>
         </div>
 
-        <BlurAnimation className="top-[30%] left-[30%]" />
         <div className="max-w-[80%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 sm:gap-6">
           <LinkedCard href="/docs/installation/next">
             <svg
