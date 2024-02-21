@@ -68,7 +68,7 @@ export default function Home() {
 
       <div className="min-h-screen min-w-screen relative">
         <div className="flex items-center justify-center w-full mt-8">
-          <h2 className="text-4xl">Kico components with</h2>
+          <h2 className="text-2xl md:text-4xl">Kico components with</h2>
         </div>
 
         <BlurAnimation className="top-[30%] left-[30%]" />
