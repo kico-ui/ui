@@ -18,7 +18,7 @@ const ComponentPage = () => {
         </div>
         <PageHeaderDescription className="mt-6">
           Beautifully designed components that you can copy and paste into your
-          apps.Build complex components easy and responsive.
+          apps. Build complex components easy and responsive.
         </PageHeaderDescription>
       </PageHeader>
     </div>
