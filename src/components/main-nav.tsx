@@ -13,7 +13,7 @@ const MainNav = () => {
       <LogoLink />
       <nav className="flex items-center gap-6 text-sm">
         <Link
-          href="/components/sign-up"
+          href="/components"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/components")
