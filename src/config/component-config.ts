@@ -9,13 +9,13 @@ export const componentConfig: ComponentConfig = {
   mainNav: [
     {
       title: "Components",
-      href: "/components/sign-up",
+      href: "/components",
     },
   ],
   sidebarNav: [
     {
       title: "Components",
-      href: "/components/sign-up",
+      href: "/components",
       items: [],
     },
   ],
