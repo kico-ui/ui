@@ -3,6 +3,7 @@
 import MainNav from "@/components/main-nav"
 import MobileNav from "@/components/mobile-nav"
 import ModeToggle from "@/components/mode-toggle"
+import LogoLink from "./logo-link"
 
 function SiteHeader() {
   return (
@@ -14,6 +15,10 @@ function SiteHeader() {
         </div>
         <div className="flex items-center space-x-2">
           <ModeToggle />
+
+          <div className="md:hidden">
+            <LogoLink />
+          </div>
         </div>
       </div>
     </header>
