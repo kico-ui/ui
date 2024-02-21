@@ -9,62 +9,39 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { buttonVariants } from "@/components/ui/button"
-import { siteConfig } from "@/config/site-config"
-import { cn } from "@/lib/utils"
-import LineAnimation from "@/components/animations/line-animation"
 import BlurAnimation from "@/components/animations/blur-animation"
 import LinkedCard from "@/components/ui/linked-card"
+import { siteConfig } from "@/config/site-config"
+import { cn } from "@/lib/utils"
 
 export default function Home() {
   return (
-    <section>
-      <div className="relative container">
-        <BlurAnimation className="top-[30%] left-[30%]" />
-        <LineAnimation
-          linePosition={60}
-          lines={["bottom", "top", "left", "right"]}
-          className="md:hidden lg:block"
-        />
-        <LineAnimation
-          linePosition={100}
-          lines={["bottom"]}
-          className="hidden lg:block"
-        />
-        <LineAnimation
-          linePosition={180}
-          lines={["bottom"]}
-          className="hidden lg:block"
-        />
-        <PageHeader>
-          <Announcement />
-          <PageHeaderHeading>
-            Make <span className="text-active">development</span> easy
-          </PageHeaderHeading>
-          <PageHeaderDescription>
-            Beautifully designed components that you can copy and paste into
-            your apps.Build complex components easy and responsive.
-          </PageHeaderDescription>
-          <PageActions className="relative mt-4">
-            <LineAnimation
-              linePosition={200}
-              lines={["left", "right"]}
-              className="hidden lg:block"
-            />
-            <Link href="/components" className={cn(buttonVariants())}>
-              Get Started
-            </Link>
-            <Link
-              target="_blank"
-              rel="noreferrer"
-              href={siteConfig.links.github}
-              className={cn(buttonVariants({ variant: "outline" }))}
-            >
-              <Icons.gitHub className="mr-2 size-4" />
-              GitHub
-            </Link>
-          </PageActions>
-        </PageHeader>
-      </div>
+    <div className="container relative">
+      <BlurAnimation className="md:top-[30%] md:left-[30%]" />
+      <PageHeader>
+        <Announcement />
+        <PageHeaderHeading>
+          Make <span className="text-active">development</span> easy
+        </PageHeaderHeading>
+        <PageHeaderDescription>
+          Beautifully designed components that you can copy and paste into your
+          apps.Build complex components easy and responsive.
+        </PageHeaderDescription>
+        <PageActions className="relative mt-4">
+          <Link href="/components" className={cn(buttonVariants())}>
+            Get Started
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href={siteConfig.links.github}
+            className={cn(buttonVariants({ variant: "outline" }))}
+          >
+            <Icons.gitHub className="mr-2 size-4" />
+            GitHub
+          </Link>
+        </PageActions>
+      </PageHeader>
 
       <div className="min-h-screen min-w-screen relative">
         <div className="flex items-center justify-center w-full mt-8">
@@ -168,6 +145,6 @@ export default function Home() {
           </LinkedCard>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

@@ -34,7 +34,7 @@ const LineAnimation = ({
         transition={{ duration: 1 }}
         style={{ [position]: linePosition }}
         className={cn(
-          "absolute opacity-10 bg-foreground",
+          "absolute opacity-10 bg-foreground md:hidden lg:block",
           position === "top" || position === "bottom"
             ? "w-full h-[1px]"
             : "h-full w-[1px]",
@@ -48,37 +48,3 @@ const LineAnimation = ({
 }
 
 export default LineAnimation
-
-// export default function LineAnimation1({
-//   linePosition = 10,
-// }: LineAnimationProps) {
-//   return (
-//     <>
-//       <motion.div className="absolute opacity-10 w-full h-[1px] bg-foreground" />
-
-//       {/* <motion.div
-//         initial={{ width: 0, opacity: 0.5 }}
-//         animate={{ width: "100%", opacity: 0.1 }}
-//         transition={{ duration: 1 }}
-//         style={{ bottom: linePosition }}
-//         className="absolute opacity-10 w-full h-[1px] bg-foreground"
-//       />
-
-//       <motion.div
-//         initial={{ height: 0, opacity: 0.5 }}
-//         animate={{ height: "100%", opacity: 0.1 }}
-//         transition={{ duration: 1 }}
-//         style={{ left: linePosition }}
-//         className="absolute opacity-10 h-full w-[1px] bg-foreground"
-//       />
-
-//       <motion.div
-//         initial={{ height: 0, opacity: 0.5 }}
-//         animate={{ height: "100%", opacity: 0.1 }}
-//         transition={{ duration: 1 }}
-//         style={{ right: linePosition }}
-//         className="absolute opacity-10 h-full w-[1px] bg-foreground"
-//       /> */}
-//     </>
-//   )
-// }
