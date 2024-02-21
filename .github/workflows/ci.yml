@@ -32,7 +32,7 @@ jobs:
         run: npm run lint
 
       - name: Run format check
-        run: npm run format
+        run: npm run format:fix
 
       - name: Check commit messages
         uses: wagoid/commitlint-github-action@v3
