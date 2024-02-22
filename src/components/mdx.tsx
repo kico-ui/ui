@@ -1,6 +1,8 @@
+import NextLink from "next/link"
+
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "next-contentlayer/hooks"
-import NextLink from "next/link"
+import ComponentPreview from "@/components/component-preview"
 
 type MdxProps = {
   code: string
@@ -157,6 +159,7 @@ const components = {
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code className={cn("font-sm", className)} {...props} />
   ),
+  ComponentPreview,
 }
 
 const Mdx = ({ code }: MdxProps) => {
