@@ -7,6 +7,7 @@ import { DashboardTableOfContents } from "@/components/toc"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { getTableOfContents } from "@/lib/toc"
 import { cn } from "@/lib/utils"
+import { DocsPager } from "@/components/pager"
 
 type ShadcnComponentParams = {
   params: {
@@ -49,7 +50,7 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
         </div>
 
         <div className="pb-12 pt-8">{/* <Mdx code={doc.body.code} /> */}</div>
-        {/* <DocsPager doc={component} /> */}
+        <DocsPager doc={component} />
       </div>
       {component.toc && (
         <div className="hidden text-sm xl:block">
