@@ -97,9 +97,10 @@
 }
 
 [data-rehype-pretty-code-fragment] code {
-  @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0;
+  @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-[14px];
   counter-reset: line;
   box-decoration-break: clone;
+  background: transparent !important;
 }
 
 [data-rehype-pretty-code-fragment] .line {
@@ -141,34 +142,13 @@
 }
 
 pre {
-  @apply mt-3 border overflow-auto p-2 rounded-md;
+  @apply mt-3 border overflow-auto bg-[#1c1c1c] dark:bg-transparent rounded-md;
 }
 
 [data-rehype-pretty-code-title] + pre {
-  @apply mt-0 border overflow-auto p-2 rounded-bl-md rounded-br-md;
+  @apply mt-0 border overflow-auto rounded-none rounded-bl-sm rounded-br-sm;
 }
 
 .mdx > .steps:first-child > h3:first-child {
   @apply mt-0;
-}
-
-code {
-  counter-reset: line;
-  font-size: 14px;
-}
-
-code > span::before {
-  counter-increment: line;
-  content: counter(line);
-
-  /* Other styling */
-  display: inline-block;
-  width: 1rem;
-  margin-right: 2rem;
-  text-align: right;
-  color: gray;
-}
-
-.highlighted-line {
-  background-color: #1c1c1c;
 }
