@@ -8,7 +8,7 @@ type LinkedCardType = {
 
 const linkedCards: LinkedCardType[] = [
   {
-    href: "/components/tailwindcss",
+    href: "/components/tailwindcss/introduction",
     icon: (
       <svg
         viewBox="0 -51 256 256"
@@ -41,7 +41,7 @@ const linkedCards: LinkedCardType[] = [
     title: "tailwindcss",
   },
   {
-    href: "/components/shadcn",
+    href: "/components/shadcn/introduction",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const linkedCards: LinkedCardType[] = [
     title: "shadcn",
   },
   {
-    href: "/components/css",
+    href: "/components/css/introduction",
     icon: (
       <svg
         viewBox="0 0 32 32"
@@ -96,7 +96,7 @@ const linkedCards: LinkedCardType[] = [
     title: "css",
   },
   {
-    href: "/components/ant-design",
+    href: "/components/ant-design/introduction",
     icon: (
       <svg
         fill="currentColor"
@@ -112,7 +112,7 @@ const linkedCards: LinkedCardType[] = [
     title: "ant design",
   },
   {
-    href: "/components/bootstrap",
+    href: "/components/bootstrap/introduction",
     icon: (
       <svg
         className="size-10"
