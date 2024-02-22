@@ -8,6 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { getTableOfContents } from "@/lib/toc"
 import { cn } from "@/lib/utils"
 import { DocsPager } from "@/components/pager"
+import Mdx from "@/components/mdx"
 
 type ShadcnComponentParams = {
   params: {
@@ -49,7 +50,9 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
           )}
         </div>
 
-        <div className="pb-12 pt-8">{/* <Mdx code={doc.body.code} /> */}</div>
+        <div className="pb-12 pt-8">
+          <Mdx code={component.body.code} />{" "}
+        </div>
         <DocsPager doc={component} />
       </div>
       {component.toc && (
