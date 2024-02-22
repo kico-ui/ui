@@ -18,6 +18,11 @@ const TailwindcssComponent = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    toc: {
+      type: "boolean",
+      default: true,
+      required: false,
+    },
   },
   computedFields: {
     slug: {
