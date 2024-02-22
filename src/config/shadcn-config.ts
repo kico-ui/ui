@@ -8,7 +8,13 @@ const shadcnComponentConfig: ShadcnComponentConfigType = {
   sidebarNav: [
     {
       title: "Getting Started",
-      items: [{ title: "Introduction", href: "/components/shadcn", items: [] }],
+      items: [
+        {
+          title: "Introduction",
+          href: "/components/shadcn/introduction",
+          items: [],
+        },
+      ],
     },
     {
       title: "Shadcn Components",
