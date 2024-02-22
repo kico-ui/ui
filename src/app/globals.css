@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -142,7 +146,7 @@
 }
 
 pre {
-  @apply mt-3 dark:border overflow-auto bg-foreground  dark:bg-transparent rounded-md;
+  @apply mt-3 dark:border overflow-auto bg-foreground  dark:bg-transparent rounded-md max-h-[600px];
 }
 
 [data-rehype-pretty-code-title] + pre {
