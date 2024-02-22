@@ -138,11 +138,11 @@
 }
 
 [data-rehype-pretty-code-title] {
-  @apply mt-2 px-4 text-sm font-medium border rounded-none rounded-tl-md rounded-tr-md;
+  @apply mt-2 px-4 text-sm font-medium py-1 dark:border rounded-none rounded-tl-md rounded-tr-md bg-foreground dark:bg-transparent text-white;
 }
 
 pre {
-  @apply mt-3 border overflow-auto bg-[#1c1c1c] dark:bg-transparent rounded-md;
+  @apply mt-3 dark:border overflow-auto bg-foreground  dark:bg-transparent rounded-md;
 }
 
 [data-rehype-pretty-code-title] + pre {
