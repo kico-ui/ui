@@ -14,9 +14,7 @@ type ShadcnComponentParams = {
   }
 }
 
-export const getComponetFromParams = async ({
-  params,
-}: ShadcnComponentParams) => {
+const getComponetFromParams = async ({ params }: ShadcnComponentParams) => {
   const component = allShadcnComponents.find(
     (component) => component.slug === `shadcn/${params?.slug}`
   )
