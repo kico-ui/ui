@@ -38,25 +38,25 @@ const SiteFooterDemo = () => {
           <h1 className="font-bold text-sm">Resources</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Docs
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Learn
             </Link>
             <Link
-              href="/components"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Components
             </Link>
             <Link
-              href="/examples"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Examples
@@ -68,13 +68,13 @@ const SiteFooterDemo = () => {
           <h1 className="font-bold text-sm">More</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Releases
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               GitHub
@@ -86,19 +86,19 @@ const SiteFooterDemo = () => {
           <h1 className="font-bold text-sm">About Kico</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Open Source Software
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               GitHub
             </Link>
             <Link
-              href="/components"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               X
