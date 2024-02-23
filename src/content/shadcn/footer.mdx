@@ -1,7 +1,7 @@
 ---
 title: "Footer"
 breadcrumb: "footer"
-description: "This is well designed fully responsible shadcn ui sign up page. Just copy and paste in your app."
+description: "This is well designed fully responsible kico ui footer component. Just copy code and paste in your app."
 status: "published"
 ---
 
@@ -27,40 +27,24 @@ npx shadcn-ui@latest add input
 npx shadcn-ui@latest add button
 ```
 
-```bash
-npx shadcn-ui@latest add form
-```
-
-### Install npm packages
-
-```bash
-npm i react-hook-form
-```
-
-```bash
-npm i zod
-```
-
-```bash
-npm i @hookform/resolvers
-```
-
 ### Add svg icons
 
 ## Code
 
 ```ts title="components/footer.tsx"
+import Link from "next/link"
+
+// svg icons
 import { Icons } from "@/components/icons/icons"
+
+// shadcn components
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import Link from "next/link"
-import BlurAnimation from "./animations/blur-animation"
 
 const SiteFooter = () => {
   return (
     <div className="pb-10 border-t">
       <div className="relative container grid grid-cols-2 md:grid-cols-5  bg-background gap-4 lg:gap-8 justify-items-start py-10">
-        <BlurAnimation className="md:left-[50%] size-[200px] top-[50%]" />
         <div className="hidden md:block">
           <div className="flex justify-center items-center w-fit">
             <Icons.logo className="size-6" />
@@ -89,25 +73,25 @@ const SiteFooter = () => {
           <h1 className="font-bold text-sm">Resources</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Docs
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Learn
             </Link>
             <Link
-              href="/components"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Components
             </Link>
             <Link
-              href="/examples"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Examples
@@ -119,13 +103,13 @@ const SiteFooter = () => {
           <h1 className="font-bold text-sm">More</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Releases
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               GitHub
@@ -137,19 +121,19 @@ const SiteFooter = () => {
           <h1 className="font-bold text-sm">About Kico</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Open Source Software
             </Link>
             <Link
-              href="/learn"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               GitHub
             </Link>
             <Link
-              href="/components"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               X
@@ -161,7 +145,7 @@ const SiteFooter = () => {
           <h1 className="font-bold text-sm">Legal</h1>
           <ul className="flex space-y-2 flex-col mt-2">
             <Link
-              href="/docs"
+              href="#"
               className="text-xs text-foreground/60 hover:text-foreground transition-all"
             >
               Privacy Policy
