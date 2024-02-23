@@ -34,7 +34,7 @@ const LineAnimation = ({
         transition={{ duration: 1 }}
         style={{ [position]: linePosition }}
         className={cn(
-          "absolute opacity-10 bg-foreground md:hidden lg:block",
+          "absolute opacity-10 bg-foreground",
           position === "top" || position === "bottom"
             ? "w-full h-[1px]"
             : "h-full w-[1px]",
