@@ -24,10 +24,14 @@ const shadcnComponentConfig: ShadcnComponentConfigType = {
           href: "/components/shadcn/sign-up",
           items: [],
         },
-
         {
           title: "Login",
           href: "/components/shadcn/login",
+          items: [],
+        },
+        {
+          title: "Footer",
+          href: "/components/shadcn/footer",
           items: [],
         },
       ],
