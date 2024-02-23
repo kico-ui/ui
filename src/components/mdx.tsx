@@ -3,6 +3,8 @@ import NextLink from "next/link"
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "next-contentlayer/hooks"
 import ComponentPreview from "@/components/component-preview"
+import { CopyButton } from "@/components//copy-button"
+import { Event } from "@/lib/events"
 
 type MdxProps = {
   code: string
@@ -159,6 +161,39 @@ const components = {
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code className={cn("font-sm", className)} {...props} />
   ),
+  pre: ({
+    className,
+    __rawstring__,
+    __withmeta__,
+    __src__,
+    __event__,
+    ...props
+  }: React.HTMLAttributes<HTMLPreElement> & {
+    __rawstring__?: string
+    __withmeta__?: boolean
+    __src__?: string
+    __event__?: Event["name"]
+  }) => {
+    return (
+      <>
+        <pre
+          className={cn(
+            "mt-3 dark:border overflow-auto py-2 bg-foreground  dark:bg-transparent rounded-md max-h-[600px]",
+            className
+          )}
+          {...props}
+        />
+        {__rawstring__ && (
+          <CopyButton
+            value={__rawstring__}
+            src={__src__}
+            event={__event__}
+            className={cn("absolute right-4 top-2", __withmeta__ && "top-16")}
+          />
+        )}
+      </>
+    )
+  },
   ComponentPreview,
 }
 
