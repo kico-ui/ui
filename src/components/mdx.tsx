@@ -178,7 +178,7 @@ const components = {
       <>
         <pre
           className={cn(
-            "mt-3 dark:border overflow-auto py-2 bg-foreground  dark:bg-transparent rounded-md max-h-[600px]",
+            "mt-6 dark:border overflow-auto py-2 bg-foreground  dark:bg-transparent rounded-md max-h-[600px]",
             className
           )}
           {...props}
