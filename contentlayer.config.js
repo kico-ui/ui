@@ -33,7 +33,7 @@ export default makeSource({
               }
             }
 
-            node.__rawString__ = codeEl.children?.[0].value
+            node.__rawstring__ = codeEl.children?.[0].value
             node.__src__ = node.properties?.__src__
             node.__style__ = node.properties?.__style__
           }
@@ -75,9 +75,9 @@ export default makeSource({
               return
             }
 
-            preElement.properties["__withMeta__"] =
+            preElement.properties["__withmeta__"] =
               node.children.at(0).tagName === "div"
-            preElement.properties["__rawString__"] = node.__rawString__
+            preElement.properties["__rawstring__"] = node.__rawstring__
 
             if (node.__src__) {
               preElement.properties["__src__"] = node.__src__
