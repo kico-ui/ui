@@ -145,14 +145,34 @@ html {
   @apply mt-2 px-4 text-sm font-medium py-1 dark:border rounded-none rounded-tl-md rounded-tr-md bg-foreground dark:bg-transparent text-white;
 }
 
-pre {
-  @apply mt-3 dark:border overflow-auto bg-foreground  dark:bg-transparent rounded-md max-h-[600px];
-}
-
 [data-rehype-pretty-code-title] + pre {
   @apply mt-0 border overflow-auto rounded-none rounded-bl-sm rounded-br-sm;
 }
 
 .mdx > .steps:first-child > h3:first-child {
   @apply mt-0;
+}
+
+code {
+  counter-reset: line;
+}
+
+code > .line::before {
+  counter-increment: line;
+  content: counter(line);
+
+  /* Other styling */
+  display: inline-block;
+  width: 1rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: rgb(50, 50, 50);
+}
+
+code[data-line-numbers-max-digits="2"] > .line::before {
+  width: 2rem;
+}
+
+code[data-line-numbers-max-digits="3"] > .line::before {
+  width: 3rem;
 }
