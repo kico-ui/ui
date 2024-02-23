@@ -8,4 +8,11 @@ export const ShandcnRegistry: Record<string, any> = {
     component: React.lazy(() => import("@/registry/shadcn/sign-up-demo")),
     files: ["registry/shadcn/sign-up-demo.tsx"],
   },
+  "login-demo": {
+    name: "Login",
+    type: "shadcn:component",
+    registryDependencies: undefined,
+    component: React.lazy(() => import("@/registry/shadcn/login-demo")),
+    files: ["registry/shadcn/login-demo.tsx"],
+  },
 }
