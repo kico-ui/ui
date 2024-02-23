@@ -43,7 +43,7 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
             {component.title}
           </h1>
           {component.description && (
-            <p className="text-md text-muted-foreground">
+            <p className="text-sm mt-2 text-muted-foreground">
               {/* <Balancer>{component.description}</Balancer> */}
               {component.description}
             </p>
