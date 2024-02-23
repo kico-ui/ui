@@ -1,8 +1,11 @@
+import Link from "next/link"
 import { Icons } from "@/components/icons/icons"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import Link from "next/link"
-import BlurAnimation from "./animations/blur-animation"
+import { siteConfig } from "@/config/site-config"
+import FooterLinks from "@/components/footer-links"
+import BlurAnimation from "@/components/animations/blur-animation"
+import { aboutKico, legal, more, resources } from "@/config/footer-config"
 
 const SiteFooter = () => {
   return (
@@ -24,97 +27,29 @@ const SiteFooter = () => {
         </div>
 
         <div className="flex items-center space-x-4 md:hidden ">
-          <Link href="#">
+          <Link href={siteConfig.links.github}>
             <Icons.gitHub className="size-4" />
           </Link>
 
-          <Link href="#">
+          <Link href={siteConfig.links.twitter}>
             <Icons.twitter className="size-4 dark:fill-white" />
           </Link>
         </div>
 
         <div>
-          <h1 className="font-bold text-sm">Resources</h1>
-          <ul className="flex space-y-2 flex-col mt-2">
-            <Link
-              href="/docs"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Docs
-            </Link>
-            <Link
-              href="/learn"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Learn
-            </Link>
-            <Link
-              href="/components"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Components
-            </Link>
-            <Link
-              href="/examples"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Examples
-            </Link>
-          </ul>
+          <FooterLinks footerLinks={resources} />
         </div>
 
         <div>
-          <h1 className="font-bold text-sm">More</h1>
-          <ul className="flex space-y-2 flex-col mt-2">
-            <Link
-              href="/docs"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Releases
-            </Link>
-            <Link
-              href="/learn"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              GitHub
-            </Link>
-          </ul>
+          <FooterLinks footerLinks={more} />
         </div>
 
         <div>
-          <h1 className="font-bold text-sm">About Kico</h1>
-          <ul className="flex space-y-2 flex-col mt-2">
-            <Link
-              href="/docs"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Open Source Software
-            </Link>
-            <Link
-              href="/learn"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              GitHub
-            </Link>
-            <Link
-              href="/components"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              X
-            </Link>
-          </ul>
+          <FooterLinks footerLinks={aboutKico} />
         </div>
 
         <div>
-          <h1 className="font-bold text-sm">Legal</h1>
-          <ul className="flex space-y-2 flex-col mt-2">
-            <Link
-              href="/docs"
-              className="text-xs text-foreground/60 hover:text-foreground transition-all"
-            >
-              Privacy Policy
-            </Link>
-          </ul>
+          <FooterLinks footerLinks={legal} />
         </div>
 
         <div className="col-span-2 md:col-span-4">
@@ -134,11 +69,11 @@ const SiteFooter = () => {
         </div>
 
         <div className="hidden col-span-1 w-full space-x-10 md:flex items-center">
-          <Link href="#">
+          <Link href={siteConfig.links.github}>
             <Icons.gitHub className="size-4" />
           </Link>
 
-          <Link href="#">
+          <Link href={siteConfig.links.twitter}>
             <Icons.twitter className="size-4 dark:fill-white" />
           </Link>
         </div>
