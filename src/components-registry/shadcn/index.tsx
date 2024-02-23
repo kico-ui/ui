@@ -22,4 +22,11 @@ export const ShandcnRegistry: Record<string, any> = {
     component: React.lazy(() => import("@/registry/shadcn/footer-demo")),
     files: ["registry/shadcn/footer-demo.tsx"],
   },
+  "navbar-demo": {
+    name: "Navbar",
+    type: "shadcn:component",
+    registryDependencies: undefined,
+    component: React.lazy(() => import("@/registry/shadcn/navbar-demo")),
+    files: ["registry/shadcn/navbar-demo.tsx"],
+  },
 }
