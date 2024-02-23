@@ -1,7 +1,6 @@
 import { ChevronRightIcon } from "@radix-ui/react-icons"
 import { allShadcnComponents } from "contentlayer/generated"
 import { notFound } from "next/navigation"
-import Balancer from "react-wrap-balancer"
 
 import { DashboardTableOfContents } from "@/components/toc"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -46,7 +45,6 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
           </h1>
           {component.description && (
             <p className="text-sm mt-2 text-muted-foreground">
-              {/* <Balancer>{component.description}</Balancer> */}
               {component.description}
             </p>
           )}
