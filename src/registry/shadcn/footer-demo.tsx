@@ -8,7 +8,7 @@ import BlurAnimation from "@/components/animations/blur-animation"
 const SiteFooterDemo = () => {
   return (
     <div>
-      <div className="relative container grid grid-cols-2 space-y-3 md:grid-cols-4  bg-background gap-4 lg:gap-8 justify-items-start py-10">
+      <div className="relative container grid grid-cols-2 space-y-3 md:grid-cols-4  bg-trasparent gap-4 lg:gap-8 justify-items-start py-10">
         <BlurAnimation className="md:left-[50%] size-[200px] top-[50%]" />
         <div className="hidden md:block">
           <div className="flex justify-center items-center w-fit">

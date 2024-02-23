@@ -111,7 +111,7 @@ function SignUpForm() {
               <FormControl>
                 <Input
                   placeholder="Enter full name"
-                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0"
+                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0 bg-transparent"
                   {...field}
                 />
               </FormControl>
@@ -130,7 +130,7 @@ function SignUpForm() {
                 <Input
                   type="email"
                   placeholder="example@kicoui.com"
-                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0"
+                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0 bg-transparent"
                   {...field}
                 />
               </FormControl>
@@ -149,7 +149,7 @@ function SignUpForm() {
                 <Input
                   type="password"
                   placeholder="Enter password"
-                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0"
+                  className="focus-visible:ring-[1px] text-xs py-0 focus-visible:ring-offset-0 rign-offset-0 bg-transparent"
                   {...field}
                 />
               </FormControl>
