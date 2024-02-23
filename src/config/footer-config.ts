@@ -1,7 +1,7 @@
 import { siteConfig } from "@/config/site-config"
 
 export const resources = {
-  title: "resources",
+  title: "Resources",
   items: [
     {
       title: "Components",

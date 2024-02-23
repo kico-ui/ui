@@ -15,14 +15,14 @@ const SiteFooter = () => {
         <div className="hidden md:block">
           <div className="flex justify-center items-center w-fit">
             <Icons.logo className="size-6" />
-            <span className="text-xs ml-2">Kico\Ui</span>
+            <span className="text-sm ml-2 font-bold">Kico\Ui</span>
           </div>
         </div>
 
         <div className="md:hidden">
           <div className="flex justify-center items-center w-fit">
             <Icons.logo className="size-6" />
-            <span className="text-sm ml-2">Kico\Ui</span>
+            <span className="text-sm ml-2 font-bold">Kico\Ui</span>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ const SiteFooter = () => {
         </div>
 
         <div className="col-span-2 md:col-span-4">
-          <h1 className="font-bold text-sm">Contact</h1>
+          <h1 className="font-bold text-md">Contact</h1>
           <span className="mt-4 text-xs font-light text-foreground/60">
             Stay updated on new releases and features, guides, and case studies.
           </span>
