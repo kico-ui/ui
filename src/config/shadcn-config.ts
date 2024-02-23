@@ -34,6 +34,11 @@ const shadcnComponentConfig: ShadcnComponentConfigType = {
           href: "/components/shadcn/footer",
           items: [],
         },
+        {
+          title: "Navbar",
+          href: "/components/shadcn/navbar",
+          items: [],
+        },
       ],
     },
   ],
