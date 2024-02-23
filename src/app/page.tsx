@@ -9,17 +9,17 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { buttonVariants } from "@/components/ui/button"
-import BlurAnimation from "@/components/animations/blur-animation"
 import { siteConfig } from "@/config/site-config"
 import LinkedCards from "@/components/linked-cards"
 import ComponentExamples from "@/components/component-examples"
+import FeatureCard from "@/components/feature-card"
 import { cn } from "@/lib/utils"
 
 export default function Home() {
   return (
-    <div className="container relative">
-      <BlurAnimation className="md:top-[30%] md:left-[30%]" />
-      <PageHeader>
+    <div className="container">
+      <PageHeader className="relative">
+        {/* <BlurAnimation className="md:top-[30%] md:left-[30%]" /> */}
         <Announcement />
         <PageHeaderHeading>
           Make <span className="text-active">development</span> easy
@@ -43,6 +43,27 @@ export default function Home() {
           </Link>
         </PageActions>
       </PageHeader>
+
+      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
+        <FeatureCard
+          title="Fully Responsible Component"
+          description="Ensuring your layouts shine on screens of all sizes with a user-centric approach."
+          color="blue-600"
+          Icon={<Icons.like className="size-6 fill-blue-600" />}
+        />
+        <FeatureCard
+          title="Make Easy Web Development"
+          description="Make easy development just copy code and paste in your app. Just loogking wow!"
+          color="red-500"
+          Icon={<Icons.copy className="size-6 fill-red-500" />}
+        />
+        <FeatureCard
+          title="Code-Powered Animations"
+          description="Bring your designs to life, adding a touch of dynamism to your digital crafts."
+          color="pink-600"
+          Icon={<Icons.animation className="size-6 fill-pink-600" />}
+        />
+      </div>
 
       <div className="min-h-screen min-w-screen relative">
         <div className="flex items-center justify-center w-full mt-8">
