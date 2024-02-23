@@ -3,6 +3,7 @@ import React from "react"
 // import BlurAnimation from "@/components/animations/blur-animation"
 import SiteFooterDemo from "@/registry/shadcn/footer-demo"
 import SignUpDemo from "@/registry/shadcn/sign-up-demo"
+import NavbarDemo from "@/registry/shadcn/navbar-demo"
 
 const ComponentExamples = () => {
   return (
@@ -11,6 +12,10 @@ const ComponentExamples = () => {
         <div className="max-w-[600px] rounded-md border">
           {/* <BlurAnimation className="bg-pink-100 dark:bg-pink-800" /> */}
           <SiteFooterDemo />
+        </div>
+
+        <div className="rounded-md border mt-10">
+          <NavbarDemo />
         </div>
       </div>
       <div className="max-w-[600px] rounded-md border">
