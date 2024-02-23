@@ -175,7 +175,7 @@ function SignUpForm() {
 
 function SignUpDemo() {
   return (
-    <div className="relative border px-5 py-10 rounded-lg">
+    <div className="relative px-5 py-10 rounded-lg">
       <div className="gap-4 flex items-center md:grid md:grid-cols-2">
         <div className="items-center justify-center hidden md:flex">
           <SignUpIcon />
