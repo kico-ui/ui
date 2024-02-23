@@ -12,6 +12,7 @@ import { buttonVariants } from "@/components/ui/button"
 import BlurAnimation from "@/components/animations/blur-animation"
 import { siteConfig } from "@/config/site-config"
 import LinkedCards from "@/components/linked-cards"
+import ComponentExamples from "@/components/component-examples"
 import { cn } from "@/lib/utils"
 
 export default function Home() {
@@ -45,10 +46,17 @@ export default function Home() {
 
       <div className="min-h-screen min-w-screen relative">
         <div className="flex items-center justify-center w-full mt-8">
-          <h2 className="text-2xl md:text-4xl">Kico components with</h2>
+          <h2 className="text-2xl md:text-4xl">Kico ui components with</h2>
         </div>
         <div className="max-w-[80%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 sm:gap-6">
           <LinkedCards />
+        </div>
+
+        <div className="py-10">
+          <div className="flex items-center justify-center w-full mt-8">
+            <h2 className="text-2xl md:text-4xl">Kico ui component examples</h2>
+          </div>
+          <ComponentExamples />
         </div>
       </div>
     </div>
