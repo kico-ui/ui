@@ -12,8 +12,8 @@ import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site-config"
 import LinkedCards from "@/components/linked-cards"
 import ComponentExamples from "@/components/component-examples"
-import FeatureCard from "@/components/feature-card"
 import { cn } from "@/lib/utils"
+import FeatureCards from "@/components/feature-cards"
 
 export default function Home() {
   return (
@@ -44,32 +44,13 @@ export default function Home() {
         </PageActions>
       </PageHeader>
 
-      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
-        <FeatureCard
-          title="Fully Responsible Component"
-          description="Ensuring your layouts shine on screens of all sizes with a user-centric approach."
-          color="blue-600"
-          Icon={<Icons.like className="size-6 fill-blue-600" />}
-        />
-        <FeatureCard
-          title="Make Easy Web Development"
-          description="Make easy development just copy code and paste in your app. Just loogking wow!"
-          color="red-500"
-          Icon={<Icons.copy className="size-6 fill-red-500" />}
-        />
-        <FeatureCard
-          title="Code-Powered Animations"
-          description="Bring your designs to life, adding a touch of dynamism to your digital crafts."
-          color="pink-600"
-          Icon={<Icons.animation className="size-6 fill-pink-600" />}
-        />
-      </div>
+      <FeatureCards />
 
       <div className="min-h-screen min-w-screen relative">
         <div className="flex items-center justify-center w-full mt-8">
           <h2 className="text-2xl md:text-4xl">Kico ui components with</h2>
         </div>
-        <div className="max-w-[80%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 sm:gap-6">
+        <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 sm:gap-6">
           <LinkedCards />
         </div>
 
