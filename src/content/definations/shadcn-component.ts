@@ -23,6 +23,10 @@ const ShadcnComponent = defineDocumentType(() => ({
       default: true,
       required: false,
     },
+    breadcrumb: {
+      type: "string",
+      required: true,
+    },
   },
   computedFields: {
     slug: {
