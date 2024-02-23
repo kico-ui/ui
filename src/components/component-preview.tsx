@@ -33,7 +33,10 @@ const ComponentPreview = ({
 
   return (
     <div
-      className={cn("group relative flex flex-col pb-8", className)}
+      className={cn(
+        "group relative flex flex-col mt-8 border rounded-md",
+        className
+      )}
       {...props}
     >
       <div
