@@ -1,4 +1,16 @@
-import { defineDocumentType } from "contentlayer/source-files"
+import { defineDocumentType, defineNestedType } from "contentlayer/source-files"
+
+const LinksProperties = defineNestedType(() => ({
+  name: "LinksProperties",
+  fields: {
+    doc: {
+      type: "string",
+    },
+    api: {
+      type: "string",
+    },
+  },
+}))
 
 const TailwindcssComponent = defineDocumentType(() => ({
   name: "TailwindcssComponent",
@@ -22,6 +34,14 @@ const TailwindcssComponent = defineDocumentType(() => ({
       type: "boolean",
       default: true,
       required: false,
+    },
+    breadcrumb: {
+      type: "string",
+      required: true,
+    },
+    links: {
+      type: "nested",
+      of: LinksProperties,
     },
   },
   computedFields: {
