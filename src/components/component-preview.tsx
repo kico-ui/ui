@@ -1,21 +1,23 @@
 import React from "react"
 
 import { cn } from "@/lib/utils"
-import { ShandcnRegistry } from "@/components-registry/shadcn"
+import { ComponentRegistry } from "@/components-registry"
 import { Icons } from "@/components/icons/icons"
 
 type ComponentPreviewProps = {
   name: string
   className?: string
+  repositoryType: "shadcn" | "tailwindcss"
 }
 
 const ComponentPreview = ({
   name,
+  repositoryType,
   className,
   ...props
 }: ComponentPreviewProps) => {
   const Preview = React.useMemo(() => {
-    const Component = ShandcnRegistry[name]?.component
+    const Component = ComponentRegistry[repositoryType][name].component
     if (!Component) {
       return (
         <p className="text-sm text-muted-foreground">
@@ -29,7 +31,7 @@ const ComponentPreview = ({
     }
 
     return <Component />
-  }, [name])
+  }, [name, repositoryType])
 
   return (
     <div
@@ -41,7 +43,7 @@ const ComponentPreview = ({
     >
       <div
         className={cn(
-          "preview flex min-h-[350px] w-full justify-center mt-8 items-center"
+          "preview flex min-h-[350px] w-full justify-center items-center"
         )}
       >
         <React.Suspense
