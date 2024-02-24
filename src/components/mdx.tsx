@@ -75,12 +75,7 @@ const components = {
     if (href.startsWith("http")) {
       return (
         <a
-          className={cn(
-            "no-underline",
-            LINK_STYLES,
-            FOCUS_VISIBLE_OUTLINE,
-            HEADING_LINK_ANCHOR
-          )}
+          className={cn("no-underline text-active")}
           href={href}
           target="_blank"
           rel="noopener"
