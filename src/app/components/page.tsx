@@ -12,7 +12,7 @@ const ComponentPage = () => {
     <>
       <div className="container min-h-screen">
         <PageHeader className="relative">
-          <BlurAnimation className="md:top-[30%] md:left-[30%] bg-blue-600" />
+          <BlurAnimation className="md:top-[30%] md:left-[30%] dark:bg-blue-600 bg-blue-300" />
           <Announcement />
           <div className="relative w-full">
             <PageHeaderHeading>
