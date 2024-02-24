@@ -1,5 +1,4 @@
 import BlurAnimation from "@/components/animations/blur-animation"
-import LineAnimation from "@/components/animations/line-animation"
 import { Announcement } from "@/components/announcement"
 import LinkedCards from "@/components/linked-cards"
 import {
