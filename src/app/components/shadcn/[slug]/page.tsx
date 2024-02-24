@@ -43,7 +43,11 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
           </div>
         </div>
         <div className="space-y-2">
-          <h1 className={cn("scroll-m-20 text-4xl font-bold tracking-tight")}>
+          <h1
+            className={cn(
+              "scroll-m-20 text-xl md:text-3xl lg:text-4xl font-bold tracking-tight"
+            )}
+          >
             {component.title}
           </h1>
           {component.description && (
@@ -83,7 +87,7 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
         <div className="pb-12 pt-8">
           <Mdx code={component.body.code} />{" "}
         </div>
-        <DocsPager doc={component} />
+        <DocsPager doc={component} componentType="shadcn" />
       </div>
       {component.toc && (
         <div className="hidden text-sm xl:block">
