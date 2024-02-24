@@ -1,10 +1,11 @@
 import NextLink from "next/link"
+import { useMDXComponent } from "next-contentlayer/hooks"
 
 import { cn } from "@/lib/utils"
-import { useMDXComponent } from "next-contentlayer/hooks"
-import ComponentPreview from "@/components/component-preview"
-import { CopyButton } from "@/components//copy-button"
 import { Event } from "@/lib/events"
+import ComponentPreview from "@/components/component-preview"
+import LinkedCard from "@/components/ui/linked-card"
+import { CopyButton } from "@/components//copy-button"
 
 type MdxProps = {
   code: string
@@ -195,6 +196,7 @@ const components = {
     )
   },
   ComponentPreview,
+  LinkedCard,
 }
 
 const Mdx = ({ code }: MdxProps) => {
