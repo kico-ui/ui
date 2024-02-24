@@ -1,13 +1,16 @@
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ChevronRightIcon, ExternalLinkIcon } from "@radix-ui/react-icons"
 import { allShadcnComponents } from "contentlayer/generated"
 import { notFound } from "next/navigation"
+import Link from "next/link"
 
-import { DashboardTableOfContents } from "@/components/toc"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { getTableOfContents } from "@/lib/toc"
 import { cn } from "@/lib/utils"
-import { DocsPager } from "@/components/pager"
+import { getTableOfContents } from "@/lib/toc"
+
 import Mdx from "@/components/mdx"
+import { DashboardTableOfContents } from "@/components/toc"
+import { DocsPager } from "@/components/pager"
+import { badgeVariants } from "@/components/ui/badge"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 type ShadcnComponentParams = {
   params: {
@@ -49,6 +52,33 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
             </p>
           )}
         </div>
+
+        {component.links ? (
+          <div className="flex items-center space-x-2 pt-4">
+            {component.links?.doc && (
+              <Link
+                href={component.links.doc}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(badgeVariants({ variant: "secondary" }), "gap-1")}
+              >
+                Docs
+                <ExternalLinkIcon className="size-3" />
+              </Link>
+            )}
+            {component.links?.api && (
+              <Link
+                href={component.links.api}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(badgeVariants({ variant: "secondary" }), "gap-1")}
+              >
+                API Reference
+                <ExternalLinkIcon className="size-3" />
+              </Link>
+            )}
+          </div>
+        ) : null}
 
         <div className="pb-12 pt-8">
           <Mdx code={component.body.code} />{" "}
