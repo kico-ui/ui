@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons"
-import { ShadcnComponent } from "contentlayer/generated"
+import { ShadcnComponent, TailwindcssComponent } from "contentlayer/generated"
 import { NavItem, NavItemWithChildren } from "@/types/nav"
 
 import shadcnConfig from "@/config/shadcn-config"
@@ -8,11 +8,12 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
 interface DocsPagerProps {
-  doc: ShadcnComponent
+  doc: ShadcnComponent | TailwindcssComponent
+  componentType: "tailwindcss" | "shadcn" | "css" | "ant-design"
 }
 
-export function DocsPager({ doc }: DocsPagerProps) {
-  const pager = getPagerForDoc(doc)
+export function DocsPager({ doc, componentType }: DocsPagerProps) {
+  const pager = getPagerForDoc({ doc, componentType })
 
   if (!pager) {
     return null
@@ -42,10 +43,10 @@ export function DocsPager({ doc }: DocsPagerProps) {
   )
 }
 
-export function getPagerForDoc(doc: ShadcnComponent) {
+export function getPagerForDoc({ doc, componentType }: DocsPagerProps) {
   const flattenedLinks = [null, ...flatten(shadcnConfig.sidebarNav), null]
   const activeIndex = flattenedLinks.findIndex(
-    (link) => `/components/${doc.slug}` === link?.href
+    (link) => `/${componentType}/${doc.slug}` === link?.href
   )
   const prev = activeIndex !== 0 ? flattenedLinks[activeIndex - 1] : null
   const next =
