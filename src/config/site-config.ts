@@ -7,6 +7,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/kico-ui/ui.git",
+    releases: "https://github.com/kico-ui/ui/releases",
   },
 }
 
