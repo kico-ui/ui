@@ -176,3 +176,7 @@ code[data-line-numbers-max-digits="2"] > .line::before {
 code[data-line-numbers-max-digits="3"] > .line::before {
   width: 3rem;
 }
+
+.link {
+  @apply text-blue-600 hover:text-blue-700;
+}
