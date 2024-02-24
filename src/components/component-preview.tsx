@@ -16,6 +16,7 @@ const ComponentPreview = ({
   className,
   ...props
 }: ComponentPreviewProps) => {
+  console.log(repositoryType, name)
   const Preview = React.useMemo(() => {
     const Component = ComponentRegistry[repositoryType][name].component
     if (!Component) {
