@@ -17,7 +17,7 @@ const shadcnComponentConfig: ShadcnComponentConfigType = {
       ],
     },
     {
-      title: "Shadcn Components",
+      title: "Kico Components",
       items: [
         {
           title: "Sign up",
