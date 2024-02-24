@@ -28,7 +28,7 @@ export type FooterLinksType = typeof resources
 export const more: FooterLinksType = {
   title: "More",
   items: [
-    { title: "Releases", href: "/releases" },
+    { title: "Releases", href: siteConfig.links.releases },
     {
       title: "GitHub",
       href: siteConfig.links.github,
@@ -53,5 +53,5 @@ export const aboutKico: FooterLinksType = {
 
 export const legal: FooterLinksType = {
   title: "Legal",
-  items: [{ title: "Privacy Policy", href: "/privacy-policy" }],
+  items: [{ title: "Privacy Policy", href: "/legal/privacy-policy" }],
 }
