@@ -1,4 +1,16 @@
-import { defineDocumentType } from "contentlayer/source-files"
+import { defineDocumentType, defineNestedType } from "contentlayer/source-files"
+
+const LinksProperties = defineNestedType(() => ({
+  name: "LinksProperties",
+  fields: {
+    doc: {
+      type: "string",
+    },
+    api: {
+      type: "string",
+    },
+  },
+}))
 
 const ShadcnComponent = defineDocumentType(() => ({
   name: "ShadcnComponent",
@@ -26,6 +38,10 @@ const ShadcnComponent = defineDocumentType(() => ({
     breadcrumb: {
       type: "string",
       required: true,
+    },
+    links: {
+      type: "nested",
+      of: LinksProperties,
     },
   },
   computedFields: {
