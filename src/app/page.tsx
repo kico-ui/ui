@@ -51,7 +51,7 @@ export default function Home() {
         <FeatureCards />
       </div>
 
-      <div className="container min-h-screen relative pb-24">
+      <div className="h-full relative pb-24">
         <div className="flex items-center justify-center">
           <h2 className="text-2xl md:text-4xl">Kico ui component examples</h2>
         </div>
