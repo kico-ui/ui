@@ -87,7 +87,7 @@ const ShadcnComponent = async ({ params }: ShadcnComponentParams) => {
         <div className="pb-12 pt-8">
           <Mdx code={component.body.code} />{" "}
         </div>
-        <DocsPager doc={component} componentType="shadcn" />
+        <DocsPager doc={component} />
       </div>
       {component.toc && (
         <div className="hidden text-sm xl:block">
