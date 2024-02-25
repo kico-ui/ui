@@ -11,11 +11,29 @@ export const componentConfig: ComponentConfig = {
       title: "Components",
       href: "/components",
     },
+    {
+      title: "Shadcn",
+      href: "/components/shadcn",
+    },
+    {
+      title: "Tailwindcss",
+      href: "/components/tailwindcss",
+    },
   ],
   sidebarNav: [
     {
       title: "Components",
       href: "/components",
+      items: [],
+    },
+    {
+      title: "Shadcn",
+      href: "/components/shadcn",
+      items: [],
+    },
+    {
+      title: "Tailwindcss",
+      href: "/components/tailwindcss",
       items: [],
     },
   ],

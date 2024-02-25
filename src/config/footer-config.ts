@@ -1,29 +1,25 @@
 import { siteConfig } from "@/config/site-config"
 
-export const resources = {
-  title: "Resources",
+export const components = {
+  title: "Components",
   items: [
     {
       title: "Components",
       href: "/components",
     },
     {
-      title: "Docs",
-      href: "/docs",
+      title: "Shadcn",
+      href: "/components/shadcn",
     },
 
     {
-      title: "Examples",
-      href: "/examples",
-    },
-    {
-      title: "Learn",
-      href: "/learn",
+      title: "Tailwind",
+      href: "/components/tailwindcss",
     },
   ],
 }
 
-export type FooterLinksType = typeof resources
+export type FooterLinksType = typeof components
 
 export const more: FooterLinksType = {
   title: "More",
