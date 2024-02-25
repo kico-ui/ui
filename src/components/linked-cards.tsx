@@ -143,7 +143,8 @@ const LinkedCards = () => {
   return (
     <>
       {linkedCards.map((card) => (
-        <LinkedCard href={card.href} key={card.title}>
+        <LinkedCard href={card.href} key={card.title} className="relative">
+          <div className="absolute inset-0 size-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
           {card.icon}
           <p className="font-medium mt-2">{card.title}</p>
         </LinkedCard>
