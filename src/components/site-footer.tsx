@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 import { siteConfig } from "@/config/site-config"
 import FooterLinks from "@/components/footer-links"
 import BlurAnimation from "@/components/animations/blur-animation"
-import { aboutKico, legal, more, resources } from "@/config/footer-config"
+import { aboutKico, components, legal, more } from "@/config/footer-config"
 
 const SiteFooter = () => {
   return (
@@ -37,7 +37,7 @@ const SiteFooter = () => {
         </div>
 
         <div>
-          <FooterLinks footerLinks={resources} />
+          <FooterLinks footerLinks={components} />
         </div>
 
         <div>
