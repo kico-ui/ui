@@ -23,7 +23,7 @@ Visit [website](https://ui-zeta-nine.vercel.app) to view the documentation.
 
 ![hero](/public/website-home-page.png)
 
-![hero](/public/website-component.png)
+![wesite components](/public/website-component.png)
 
 ## Contributing
 
