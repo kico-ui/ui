@@ -1,0 +1,78 @@
+---
+title: "Elevate Your Design: Crafting Components with Tailwind Css"
+breadcrumb: "introduction"
+description: "This is well designed fully responsible kico ui components using tailwind css. Just copy code and paste in your app."
+status: "published"
+links:
+  doc: "https://tailwindcss.com/docs/installation"
+---
+
+## Preview
+
+<ComponentPreview
+  name="neumorphism-buttons-demo"
+  repositoryType="tailwindcss"
+/>
+
+## Setup Guide
+
+### Install tailwind css
+
+<a
+  href="https://tailwindcss.com/docs/installation/framework-guides"
+  className="link"
+  target="__blank"
+>
+  * Tailwind css installation docs
+</a>
+
+### Tailwind css configuration
+
+- Add darkMode property
+
+```ts title="tailwind.config.{ts, js}" {2, 7-9}
+export default {
++  darkMode:"selector",
+  theme: {
+    extend: {
+      // ...
+    },
++    boxShadow: {
++      "inner-2xl": "inset 10px 10px 10px -1px rgba(10,99,169,0.15), inset -10px -10px 10px -1px rgba(255,255,255,0.70)",
++    },
+  },
+  plugins: [],
+}
+```
+
+## Code
+
+```html title="neumorphism-buttons.{html, jsx, tsx, ejs}"
+<div
+  class="flex h-screen w-full items-center justify-center space-x-9 bg-[#ebeef1]"
+>
+  <button
+    class="bg-[#ebeef1] px-6 py-2 font-light tracking-wider text-[#000] shadow-[10px_10px_10px_-1px_rgba(10,99,169,0.15),-10px_-10px_10px_-1px_rgba(255,255,255,0.70)] hover:bg-gray-200"
+  >
+    Button
+  </button>
+
+  <button
+    class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ebeef1] p-4 font-light tracking-wider text-[#000000] shadow-[10px_10px_10px_-1px_rgba(10,99,169,0.15),-10px_-10px_10px_-1px_rgba(255,255,255,0.70)] hover:bg-gray-200"
+  >
+    1
+  </button>
+
+  <button
+    class="shadow-inner-2xl rounded-full bg-[#ebeef1] px-6 py-2 font-light tracking-wider text-[#000] hover:bg-gray-200"
+  >
+    Button
+  </button>
+
+  <button
+    class="shadow-inner-2xl flex h-5 w-5 items-center justify-center rounded-[50%] bg-[#ebeef1] p-5 font-light tracking-wider text-[#000] hover:bg-gray-200"
+  >
+    B
+  </button>
+</div>
+```
