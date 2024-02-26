@@ -76,6 +76,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    boxShadow: {
+      "inner-2xl":
+        "inset 10px 10px 10px -1px rgba(10,99,169,0.15), inset -10px -10px 10px -1px rgba(255,255,255,0.70)", // l -> r t -> b blur
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
