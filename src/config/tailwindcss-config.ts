@@ -39,6 +39,11 @@ const TailwindcssComponentConfig: TailwindcssComponentConfigType = {
           href: "/components/tailwindcss/navbar",
           items: [],
         },
+        {
+          title: "Neumorphism Buttons",
+          href: "/components/tailwindcss/neumorphism-buttons",
+          items: [],
+        },
       ],
     },
   ],
