@@ -3,7 +3,7 @@ import React from "react"
 
 const SignUpDemo = () => {
   return (
-    <div className="relative h-screen flex-col items-center justify-center p-0 md:grid lg:max-w-none lg:grid-cols-2">
+    <div className="relative h-full flex-col items-center justify-center p-0 md:grid lg:max-w-none lg:grid-cols-2">
       <div className="relative hidden h-full items-center justify-center border-r border-gray-500 lg:flex">
         <SignUpIcon />
       </div>
