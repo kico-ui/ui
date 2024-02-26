@@ -1,52 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kico UI - Pre-designed Component Library
 
-## Getting Started
+- Just copy code and paste in your app.
 
-First, run the development server:
+- Kico UI - Pre-designed Component Library
+  Kico UI is a comprehensive component library designed to streamline your UI development process. It provides a rich collection of pre-designed components that can be easily integrated into your web applications. With Kico UI, you can create visually appealing and responsive interfaces with minimal effort.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Please visit our website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### [Kico-ui]()
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `Tailwind CSS Integration`: Utilize the power of Tailwind CSS for efficient styling and customization.
 
-## Learn More
+- `Ant Design Components`: Benefit from the rich set of UI components provided by Ant Design for building complex interfaces.
 
-To learn more about Next.js, take a look at the following resources:
+- `Shadcn Ui Components`: Enhance your UI elements with beautiful and customizable shadow effects using Shadcn.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Visit [website](https://ui-zeta-nine.vercel.app) to view the documentation.
 
-## Deploy on Vercel
+![hero](/public/website-home-page.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![hero](/public/website-component.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
 
-## Commands I used for configuration of CI/CD in this project.
-
-npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
-
-npm install --save-dev husky lint-staged
-
-git init
-npx husky install
-npx husky add .husky/pre-commit "npx lint-staged"
-
-npm install --save-dev @commitlint/{cli,config-conventional}
-
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'  Now create commitlint.config.cjs
-
-// adding this will create static site for next.js 14 for GitHub pages const nextConfig = { output: 'export’}
+Please read the [contributing guide](/CONTRIBUTING.md).
