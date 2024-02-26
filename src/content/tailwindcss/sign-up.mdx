@@ -9,6 +9,34 @@ status: "published"
 
 <ComponentPreview name="sign-up-demo" repositoryType="tailwindcss" />
 
+## Setup Guide
+
+### Install tailwind css
+
+<a
+  href="https://tailwindcss.com/docs/installation/framework-guides"
+  className="link"
+  target="__blank"
+>
+  * Tailwind css installation docs
+</a>
+
+### Tailwind css configuration
+
+- Add darkMode property
+
+```ts title="tailwind.config.{ts, js}" {2}
+export default {
++  darkMode:"selector",
+  theme: {
+    extend: {
+      // ...
+    },
+  },
+  plugins: [],
+}
+```
+
 ## Code
 
 ```html title="sign-up.{html, jsx, tsx, ejs}"

@@ -21,6 +21,22 @@ status: "published"
   * Tailwind css installation docs
 </a>
 
+### Tailwind css configuration
+
+- Add darkMode property
+
+```ts title="tailwind.config.{ts, js}" {2}
+export default {
++  darkMode:"selector",
+  theme: {
+    extend: {
+      // ...
+    },
+  },
+  plugins: [],
+}
+```
+
 ## code
 
 ```html title="login.{html, jsx, tsx, ejs}"

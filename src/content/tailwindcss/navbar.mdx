@@ -6,3 +6,133 @@ status: "published"
 ---
 
 ## Preview
+
+<ComponentPreview name="navbar-demo" repositoryType="tailwindcss" />
+
+## Setup Guide
+
+### Install tailwind css
+
+<a
+  href="https://tailwindcss.com/docs/installation/framework-guides"
+  className="link"
+  target="__blank"
+>
+  * Tailwind css installation docs
+</a>
+
+### Tailwind css configuration
+
+- Add darkMode property
+
+```ts title="tailwind.config.{ts, js}" {2}
+export default {
++  darkMode:"selector",
+  theme: {
+    extend: {
+      // ...
+    },
+  },
+  plugins: [],
+}
+```
+
+## Code
+
+```html title="navbar.{html, jsx, tsx, ejs}"
+<div class="w-full border-b backdrop-blur">
+  <div class="mx-auto flex h-14 w-[90%] items-center justify-between">
+    <div class="hidden items-center justify-center md:flex">
+      <h1 class="mr-4 font-bold tracking-wider">
+        <a href="#">Kico-ui</a>
+      </h1>
+      <div class="flex items-center justify-center space-x-5">
+        <a
+          href="#"
+          class="active:text-balck text-sm text-gray-600 transition-all hover:text-black dark:text-gray-400 dark:hover:text-white"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="active:text-balck text-sm text-gray-600 transition-all hover:text-black dark:text-gray-400 dark:hover:text-white"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          class="active:text-balck text-sm text-gray-600 transition-all hover:text-black dark:text-gray-400 dark:hover:text-white"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center md:hidden">
+      <div class="flex items-center justify-center space-x-3">
+        <button>
+          <svg
+            height="20px"
+            width="20px"
+            strokeWidth="1.5"
+            viewBox="0 0 24 24"
+            fill="#000000"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 5H11"
+              stroke="#000000"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M3 12H16"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M3 19H21"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>
+        </button>
+        <h1 class="font-bold tracking-wider">
+          <a href="#">Kico-ui</a>
+        </h1>
+      </div>
+    </div>
+    <div class="flex items-center justify-center space-x-3">
+      <div
+        class="hidden items-center justify-between rounded-full border border-gray-600 px-3 py-1 md:flex"
+      >
+        <input
+          type="text"
+          placeholder="Search here.."
+          class="bg-transparent text-sm outline-none placeholder:text-sm"
+        />
+        <button
+          class="flex size-6 items-center justify-center rounded-[50%] bg-gray-900 text-sm font-thin text-white hover:bg-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+        >
+          S
+        </button>
+      </div>
+      <button
+        class="border border-black px-3 py-1 text-sm font-light tracking-wider text-black transition-all hover:bg-gray-100 dark:border-white dark:bg-black dark:text-white dark:hover:bg-gray-800"
+      >
+        Login
+      </button>
+      <button
+        class="border border-black bg-gray-900 px-3 py-1 text-sm font-light tracking-wider text-white transition-all hover:bg-gray-700 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-200"
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
+</div>
+```
