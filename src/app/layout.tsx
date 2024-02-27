@@ -9,7 +9,8 @@ import ThemeProvider from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   title: "Kico Ui",
-  description: "This is kico ui for ui components using shadcn-ui",
+  description:
+    "Beautifully designed components that you can copy and paste into your apps. Build complex components easy and responsive. Just copy code and paste in your app.",
 }
 
 export default function RootLayout({
