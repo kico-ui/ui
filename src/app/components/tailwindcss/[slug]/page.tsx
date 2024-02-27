@@ -2,6 +2,7 @@ import { ChevronRightIcon, ExternalLinkIcon } from "@radix-ui/react-icons"
 import { allTailwindcssComponents } from "contentlayer/generated"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import type { Metadata, ResolvingMetadata } from "next"
 
 import { cn } from "@/lib/utils"
 import { getTableOfContents } from "@/lib/toc"
@@ -25,6 +26,18 @@ const getComponetFromParams = async ({
     (component) => component.slug === `tailwindcss/${params?.slug}`
   )
   return component ? component : null
+}
+
+export async function generateMetadata(
+  { params }: TailwindcssComponentParams,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const component = await getComponetFromParams({ params })
+  if (!component) return { title: "Kico ui : tailwindcss components" }
+  return {
+    title: "Tailwindcss: " + component.title,
+    description: component?.description,
+  }
 }
 
 const TailwindcssComponent = async ({ params }: TailwindcssComponentParams) => {
