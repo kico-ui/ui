@@ -1,19 +1,17 @@
 import { cn } from "@/lib/utils"
 
-const BlurAnimation = ({
+export const BlurEffect = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLSpanElement>) => {
   return (
     <span
       className={cn(
-        "absolute size-[300px] bg-foreground/40 blur-[150px]",
+        "absolute md:top-[30%] md:left-[30%] dark:bg-blue-600 bg-white size-[300px] blur-[150px]",
         className
       )}
       {...props}
     />
   )
 }
-BlurAnimation.displayName = "BlurAnimation"
-
-export default BlurAnimation
+BlurEffect.displayName = "BlurEffect"
