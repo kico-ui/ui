@@ -90,7 +90,7 @@ const MobileNav = () => {
 const NavbarDemo = () => {
   const pathname = usePathname()
   return (
-    <header className="bg-background/95 w-full supports-[backdrop-filter]:bg-background/60 border-b backdrop-blur">
+    <header className="w-full supports-[backdrop-filter]:bg-background/60 border-b backdrop-blur">
       <div className="container flex h-14 max-w-screen-2xl items-center justify-between relative">
         <>
           <MainNav />
