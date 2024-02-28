@@ -3,13 +3,11 @@ import Link from "next/link"
 import { Icons } from "@/components/icons/icons"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import BlurAnimation from "@/components/animations/blur-animation"
 
 const SiteFooterDemo = () => {
   return (
     <div>
       <div className="relative container grid grid-cols-2 space-y-3 md:grid-cols-4  bg-trasparent gap-4 lg:gap-8 justify-items-start py-10">
-        <BlurAnimation className="md:left-[50%] size-[200px] top-[50%]" />
         <div className="hidden md:block">
           <div className="flex justify-center items-center w-fit">
             <Icons.logo className="size-6" />

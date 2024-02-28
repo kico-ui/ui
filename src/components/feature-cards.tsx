@@ -1,4 +1,4 @@
-import BlurAnimation from "@/components/animations/blur-animation"
+import { BlurEffect } from "@/components/animations/blur-effect"
 import LineAnimation from "@/components/animations/line-animation"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons/icons"
@@ -7,7 +7,7 @@ const FeatureCards = () => {
   return (
     <div className="md:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-20">
       <div className={cn("rounded-lg relative border border-pink-400")}>
-        <BlurAnimation
+        <BlurEffect
           className={cn("size-[150px] top-[50%] left-[50%] bg-pink-400")}
         />
         <LineAnimation
@@ -17,7 +17,7 @@ const FeatureCards = () => {
         />
 
         <div className="z-10 size-12 mt-[7px] ml-[30px] rounded-full flex items-center justify-center relative shadow-md border border-pink-400">
-          <BlurAnimation className="bg-white size-[60px] blur-[50px]" />
+          <BlurEffect className="bg-white size-[60px] blur-[50px]" />
           <Icons.like className="size-6 fill-pink-400" />
         </div>
 
@@ -36,7 +36,7 @@ const FeatureCards = () => {
       </div>
 
       <div className={cn("rounded-lg relative border border-blue-400")}>
-        <BlurAnimation
+        <BlurEffect
           className={cn("size-[150px] top-[50%] left-[50%] bg-blue-400")}
         />
         <LineAnimation
@@ -46,7 +46,7 @@ const FeatureCards = () => {
         />
 
         <div className="z-10 size-12 mt-[7px] ml-[30px] rounded-full flex items-center justify-center relative shadow-md border border-blue-400">
-          <BlurAnimation className="bg-white size-[60px] blur-[50px]" />
+          <BlurEffect className="bg-white size-[60px] blur-[50px]" />
           <Icons.copy className="size-6 fill-blue-600" />
         </div>
 
@@ -65,7 +65,7 @@ const FeatureCards = () => {
       </div>
 
       <div className={cn("rounded-lg relative border border-yellow-400")}>
-        <BlurAnimation
+        <BlurEffect
           className={cn("size-[150px] top-[50%] left-[50%] bg-yellow-400")}
         />
         <LineAnimation
@@ -75,7 +75,7 @@ const FeatureCards = () => {
         />
 
         <div className="z-10 size-12 mt-[7px] ml-[30px] rounded-full flex items-center justify-center relative shadow-md border border-yellow-400">
-          <BlurAnimation className="bg-white size-[60px] blur-[50px]" />
+          <BlurEffect className="bg-white size-[60px] blur-[50px]" />
           <Icons.animation className="size-6 fill-yellow-600" />
         </div>
 

@@ -12,7 +12,7 @@ type FooterLinksProps = {
 
 const FooterLinks = ({ footerLinks }: FooterLinksProps) => {
   return (
-    <>
+    <div>
       <h1 className="font-bold text-md">{footerLinks.title}</h1>
       <ul className="flex space-y-2 flex-col mt-2">
         {footerLinks.items.map((item) => (
@@ -25,7 +25,7 @@ const FooterLinks = ({ footerLinks }: FooterLinksProps) => {
           </Link>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 
