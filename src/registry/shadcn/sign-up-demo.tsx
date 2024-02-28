@@ -175,49 +175,47 @@ function SignUpForm() {
 
 function SignUpDemo() {
   return (
-    <div className="relative px-5 py-10 rounded-lg">
-      <div className="gap-4 flex items-center md:grid md:grid-cols-2">
-        <div className="items-center justify-center hidden md:flex">
-          <SignUpIcon />
-        </div>
-        <div className="flex items-center justify-center h-full">
-          <div className="mx-auto flex w-full flex-col justify-center space-y-6">
-            <div className="flex flex-col space-y-2 text-center">
-              <h1 className="text-xl font-semibold tracking-tight">
-                Create an account
-              </h1>
-              <p className="text-xs text-muted-foreground">
-                Enter your information below to create your account
-              </p>
-            </div>
-            <SignUpForm />
-            <div className="flex items-center justify-start">
-              <Link
-                href="#"
-                className="text-sm text-foreground/60 transition-all hover:text-foreground md:text-xs"
-              >
-                Already have an acount?
-              </Link>
-            </div>
-            <AuthenticationStrategy />
-            <p className="px-4 text-center text-sm md:text-xs text-muted-foreground">
-              By clicking continue, you agree to our{" "}
-              <Link
-                href="#"
-                className="underline underline-offset-4 hover:text-primary"
-              >
-                Terms of Service
-              </Link>{" "}
-              and{" "}
-              <Link
-                href="#"
-                className="underline underline-offset-4 hover:text-primary"
-              >
-                Privacy Policy
-              </Link>
-              .
+    <div className="relative gap-4 flex items-center md:grid md:grid-cols-2 px-6 py-10">
+      <div className="items-center justify-center hidden md:flex">
+        <SignUpIcon />
+      </div>
+      <div className="flex items-center justify-center h-full">
+        <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:max-w-[400px]">
+          <div className="flex flex-col space-y-2 text-center">
+            <h1 className="text-xl font-semibold tracking-tight">
+              Create an account
+            </h1>
+            <p className="text-xs text-muted-foreground">
+              Enter your information below to create your account
             </p>
           </div>
+          <SignUpForm />
+          <div className="flex items-center justify-start">
+            <Link
+              href="#"
+              className="text-sm text-foreground/60 transition-all hover:text-foreground md:text-xs"
+            >
+              Already have an acount?
+            </Link>
+          </div>
+          <AuthenticationStrategy />
+          <p className="px-4 text-center text-sm md:text-xs text-muted-foreground">
+            By clicking continue, you agree to our{" "}
+            <Link
+              href="#"
+              className="underline underline-offset-4 hover:text-primary"
+            >
+              Terms of Service
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="#"
+              className="underline underline-offset-4 hover:text-primary"
+            >
+              Privacy Policy
+            </Link>
+            .
+          </p>
         </div>
       </div>
     </div>
