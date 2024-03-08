@@ -5,6 +5,7 @@ import SignUpDemo from "@/registry/shadcn/sign-up-demo"
 import NavbarDemo from "@/registry/shadcn/navbar-demo"
 import { GridEffect } from "@/components/animations/grid-effect"
 import { DotEffect } from "@/components/animations/dot-effect"
+import KicoFancyButtonDemo from "@/registry/tailwindcss/kico-fancy-button-demo"
 
 const ComponentExamples = () => {
   return (
@@ -17,6 +18,10 @@ const ComponentExamples = () => {
 
         <div className="rounded-md border">
           <NavbarDemo />
+        </div>
+
+        <div className="h-[350px] w-full flex items-center justify-center border rounded-md ">
+          <KicoFancyButtonDemo />
         </div>
       </div>
 
