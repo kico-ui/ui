@@ -39,7 +39,7 @@ export default function MobileNav() {
             <MobileLink
               href={nav.href!}
               onOpenChange={setOpen}
-              className="flex items-center"
+              className="flex items-center py-2 text-sm text-foreground/60"
               key={index}
             >
               {nav.title}
