@@ -40,14 +40,10 @@ export const aboutKico: FooterLinksType = {
       title: "GitHub",
       href: siteConfig.links.github,
     },
-    {
-      title: "X",
-      href: siteConfig.links.twitter,
-    },
   ],
 }
 
 export const legal: FooterLinksType = {
   title: "Legal",
-  items: [{ title: "Privacy Policy", href: "/legal/privacy-policy" }],
+  items: [],
 }
