@@ -33,4 +33,12 @@ export const TailewindcssRegistry: Record<string, any> = {
       () => import("@/registry/tailwindcss/neumorphism-buttons-demo")
     ),
   },
+  "kico-fancy-button-demo": {
+    name: "Kico Fancy Button",
+    type: "tailwindcss:component",
+    registryDependencies: undefined,
+    component: React.lazy(
+      () => import("@/registry/tailwindcss/kico-fancy-button-demo")
+    ),
+  },
 }
