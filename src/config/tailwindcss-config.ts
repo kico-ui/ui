@@ -17,6 +17,21 @@ const TailwindcssComponentConfig: TailwindcssComponentConfigType = {
       ],
     },
     {
+      title: "Buttons",
+      items: [
+        {
+          title: "Neumorphism Buttons",
+          href: "/components/tailwindcss/neumorphism-buttons",
+          items: [],
+        },
+        {
+          title: "Kico Fancy Button",
+          href: "/components/tailwindcss/kico-fancy-button",
+          items: [],
+        },
+      ],
+    },
+    {
       title: "Kico Components",
       items: [
         {
@@ -37,11 +52,6 @@ const TailwindcssComponentConfig: TailwindcssComponentConfigType = {
         {
           title: "Navbar",
           href: "/components/tailwindcss/navbar",
-          items: [],
-        },
-        {
-          title: "Neumorphism Buttons",
-          href: "/components/tailwindcss/neumorphism-buttons",
           items: [],
         },
       ],
