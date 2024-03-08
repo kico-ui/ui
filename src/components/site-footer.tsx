@@ -14,10 +14,6 @@ export const FooterSocials = () => {
       <Link href={siteConfig.links.github}>
         <Icons.gitHub className="size-4" />
       </Link>
-
-      <Link href={siteConfig.links.twitter}>
-        <Icons.twitter className="size-4 dark:fill-white" />
-      </Link>
     </>
   )
 }
@@ -26,7 +22,7 @@ const SiteFooter = () => {
   return (
     <div className="pb-10 border-t">
       <div className="relative container">
-        <div className="grid grid-cols-2 md:grid-cols-5  bg-background gap-4 lg:gap-8 justify-items-start py-10">
+        <div className="grid grid-cols-2 md:grid-cols-6  bg-background gap-8 lg:gap-8 justify-items-start py-10">
           <div className="hidden md:block">
             <LogoLink />
           </div>
@@ -43,7 +39,7 @@ const SiteFooter = () => {
           <FooterLinks footerLinks={aboutKico} />
           <FooterLinks footerLinks={legal} />
 
-          <div className="col-span-2 md:col-span-4">
+          {/* <div className="col-span-2 md:col-span-4">
             <h1 className="font-bold text-md">Contact</h1>
             <span className="mt-4 text-xs font-light text-foreground/60">
               Stay updated on new releases and features, guides, and case
@@ -58,9 +54,9 @@ const SiteFooter = () => {
                 Connect
               </Button>
             </div>
-          </div>
+          </div> */}
 
-          <div className="hidden col-span-1 w-full space-x-10 md:flex items-center">
+          <div className="hidden col-span-1 w-full space-x-10 md:block">
             <FooterSocials />
           </div>
         </div>
